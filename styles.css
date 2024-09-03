@@ -1,0 +1,87 @@
+.jumbotron-custom {
+    background-color: #f8f9fa; /* Light gray background color */
+    color: #495057; /* Darker gray text color */
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px; /* Adjust top padding as needed */
+  }
+  .navbar-brand img {
+    max-width: 40px; 
+    height: auto; 
+  }
+  .about-content {
+    padding-top: 50px; 
+  }
+  .card-body {
+    position: relative; 
+    overflow: hidden; 
+  }
+  .project-image {
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+  }
+  .project-image img {
+    width: 100%; 
+    height: auto;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+  }
+  .card-title {
+    position: relative; 
+    z-index: 1; 
+  }
+  .orange-text {
+    color: orange; /* Orange text color */
+  }
+  .social-link {
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  .social-link img {
+    width: 40px; /* Size of social media icons */
+    height: 40px;
+    border-radius: 50%; /* Rounded shape */
+  }
+  .navbar-nav .nav-link {
+          position: relative;
+          padding-bottom: 5px;
+      }
+
+      .navbar-nav .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff;
+          transition: width 0.3s;
+      }
+
+      .navbar-nav .nav-link:hover::after,
+      .navbar-nav .nav-link.active::after {
+          width: 100%;
+      }
+      .socialMedia .social-link img {
+          width: 50px; /* Adjust size as needed */
+          height: 50px; /* Adjust size as needed */
+          transition: transform 0.3s;
+      }
+
+      .socialMedia .social-link:hover img {
+          transform: scale(1.1);
+      }
+
+      .socialMedia .social-link {
+          display: inline-block;
+          border-radius: 50%;
+          overflow: hidden;
+          padding: 5px;
+          background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa);
+          background-size: 400%;
+          transition: background-position 0.5s;
+      }
+
+      .socialMedia .social-link:hover {
+          background-position: right;
+      }
